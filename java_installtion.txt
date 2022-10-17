@@ -1,0 +1,75 @@
+---java installation ubuntu eclips-----------
+
+#https://itsfoss.com/install-latest-eclipse-ubuntu/
+
+#https://github.com/KDVC/simple-crud-springboot-project
+
+
+mehod-following-by-java
+***********************
+
+SampleApplication.java-----> @SpringBootApplication (this is main method that calling jvm jrm for spring boot running)
+
+Employee.java--------->  @Data (data tha call json,sql data from db)
+                    @Entity(this is main methon thad enter main function)
+                    @Table( table name we enter in thies)
+
+                    @Id
+                    @Column(name = "id") (mension the column in this type )
+                    @GeneratedValue(strategy = GenerationType.IDENTITY)( primery key should hava this type value)
+
+
+EmployeeService.java ----->public interface {} 
+
+EmployeeServiceImpl.java------>@Service (It is used to mark the class as a service provider. So overall @Service)
+                                public class ***** implements *******{}
+                                @Autowired (The Spring framework enables automatic dependency injection. )
+                                @Autowired
+                                Repository Repository;
+
+
+EmployeeRepository.java------>@Repository(public interface EmployeeRepository extends   CrudRepository <Employee,Long>{})   [CrudRepository]
+
+                              @Repository( @Repository annotation is used to indicate that the class provides the mechanism for storage, retrieval, search, update and delete operation on objects)
+
+
+EmployeeController.java------->     import com.viraj.sample.entity.Employee;
+                                    import com.viraj.sample.service.EmployeeService;
+
+                                    @RestController() (Spring RestController annotation is a convenience annotation that is itself annotated with @Controller and @ResponseBody)
+
+                                    @RequestMapping("/employee/") (hosting terminal http://localhost:8883/employee/delete/)
+
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------mysql--------install---------------------
+#https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04
+
+sudo systemctl start mysql.service
+
+mysql -u root -p
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ubuntu';
+
+
+
