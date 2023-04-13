@@ -1,10 +1,12 @@
 # simple-crud-springboot-project
 ##  Download the API document  using below link
-https://github.com/KDVC/api-documents/tree/master/simple-crud-springboot-project
+
+https://github.com/jebasingh-wesley/java_crud_method_mysql
 
 ##  Introduction 
 This is a sample spring boot project those who are seeking to learn about how to create a simple spring boot crud application. 
 This project has implemented all the crud operations in a simple way. You can learn how to do crud operations in spring boot. 
+https://github.com/KDVC/api-documents/tree/master/simple-crud-springboot-project
 
 ##  Technologies Used 
 *  Spring Boot 
